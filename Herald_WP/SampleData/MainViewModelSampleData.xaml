@@ -1,0 +1,16 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:Herald_WP.ViewModels"
+    SampleProperty="Sample Text Property Value">
+
+    <vm:MainViewModel.Items>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+        <vm:ItemViewModel LineOne="XX活动" LineTwo="XXX社团发布" LineThree="XXX活动的简介"/>
+    </vm:MainViewModel.Items>
+
+</vm:MainViewModel>
