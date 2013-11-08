@@ -171,16 +171,19 @@
                 <Grid>
                     <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
+                            <Button FontSize="30">更新成绩</Button>
+                            <Button FontSize="30">计算</Button>
+                            <Button FontSize="30">全选</Button>
+                            <Button FontSize="30">取消选修课</Button>
                         </StackPanel>
                         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0">
                             <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
                             <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
                             <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
                             <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="10">
+                            <TextBlock FontSize="30">所得绩点为：2.8</TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
@@ -192,16 +195,9 @@
                 <Grid>
                     <StackPanel Margin="0,4,16,0" Orientation="Vertical" VerticalAlignment="Top">
                         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                        </StackPanel>
-                        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,12,0,0">
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
-                            <Border Background="#FFFFC700" Height="173" Width="173" Margin="12,0,0,0"/>
+                            <TextBlock FontSize="50" Margin="10">
+                        		<Run Text="已跑操0次"/>
+                            </TextBlock>
                         </StackPanel>
                     </StackPanel>
                 </Grid>
@@ -267,7 +263,6 @@
                     </StackPanel>
                 </Grid>
             </phone:PanoramaItem>
-            
         </phone:Panorama>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are
@@ -279,4 +274,17 @@
         <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
 
     </Grid>
+    <!--this is menu bar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>-->
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="一卡通登录"/>
+                <shell:ApplicationBarMenuItem Text="体育系登录"/>
+                <shell:ApplicationBarMenuItem Text="图书馆登录"/>
+                <shell:ApplicationBarMenuItem Text="退出"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>
